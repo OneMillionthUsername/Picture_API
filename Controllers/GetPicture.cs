@@ -6,7 +6,7 @@ namespace mvc_API.Controllers
 {
     public class GetPicture : Controller
     {
-        private string path = @"c:\pictures";
+        private readonly string path = @"c:\pictures";
 
         public IActionResult Info()
         {
