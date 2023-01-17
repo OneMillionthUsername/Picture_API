@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>USAGE</h1>
+<p>
+    <h2>GET PICTURE:</h2>
+    Create a folder "C:\pictures".
+    Put one or more pictures in there.
+    Replace name and file format in the request url with the name
+    and file format of the requested picture.
+
+    <h2>GET FILES:</h2>
+    If you want to see what files files are stored use
+    the request link with "req=get"
+</p>
+
+<h1>REQUEST</h1>
+
+<b>Get a single picture</b>
+<a href="@Url.PageLink()GetPicture/GetPic?apiKey=getPictures&name=lol&file=jpg" target="_blank">
+    @Url.PageLink()GetPicture/GetPic?apiKey=getPictures&name=lol&file=jpg
+    </a>
+<br />
+<b>Get a list of all files</b>
+<a href="@Url.PageLink()GetPicture/GetFiles?apiKey=getPictures&req=get" target="_blank">
+    @Url.PageLink()GetPicture/GetFiles?apiKey=getPictures&req=get
+</a>
